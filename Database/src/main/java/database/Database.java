@@ -4,6 +4,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.logging.Logger;
 class Connect{
+	pass="Janani7@";
 	Connection con;
 	Logger l = Logger.getLogger("com.api.jar");
 	private static Connect si = null;
@@ -17,7 +18,7 @@ class Connect{
 	void newconnect() {	
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver"); 
-  			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root","Janani7@");
+  			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/student","root",pass);
   			Statement stmt=con.createStatement();
             l.info("inserting records");
             String sql="Insert into detail values(56,'subu')";
