@@ -4,7 +4,7 @@ import java.sql.DriverManager;
 import java.sql.Statement;
 import java.util.logging.Logger;
 class Connect{
-	pass="Janani7@";
+	String pass="Janani7@";
 	Connection con;
 	Logger l = Logger.getLogger("com.api.jar");
 	private static Connect si = null;
